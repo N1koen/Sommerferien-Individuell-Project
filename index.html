@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="index.css" />
+
+    <title>Frontend Mentor | Interactive rating component</title>
+  </head>
+  <body>
+    <!-- Rating state start -->
+
+    <div class="main-container">
+      <img src="./images/icon-star.svg" alt="" />
+
+      <h1>Hvordan var sommerferien?</h1>
+
+      <p>
+        La oss vite hvordan det gikk med ferien din. 
+        Alle tilbakemeldinger er vitkige for oss for å bli bedre!
+      </p>
+
+      <ul>
+        <li><button class="btn">1</button></li>
+        <li><button class="btn">2</button></li>
+        <li><button class="btn">3</button></li>
+        <li><button class="btn">4</button></li>
+        <li><button class="btn">5</button></li>
+      </ul>
+
+      <button class="btn-sumbit" id="submit">send inn</button>
+    </div>
+
+    <!-- Rating state end -->
+
+    <!-- Thank you state start -->
+
+    <div class="thank-you hidden">
+      <img src="./images/illustration-thank-you.svg" alt="" />
+      <p class="gray">
+        Du valgte
+        <span id="rating"></span>
+        av 5
+      </p>
+
+      <h2>Takk!</h2>
+
+      <p>
+        Vi setter pris på at du tok din tid for å gi oss en vurdering.
+        Vist du trenger med hjelp, så ikke nøl med å ta kontakt!
+      </p>
+
+      <button class="btn-sumbit" id="rate-again">Stemme igjen</button>
+    </div>
+
+    <!-- Thank you state end -->
+
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Nikolai Fosse</a>.
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>
